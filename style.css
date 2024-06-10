@@ -6,10 +6,11 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: #333;
     padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -45,13 +46,35 @@ h1 {
 
 .social-links a {
     margin: 0 10px;
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
 .social-links a:hover {
     color: #30cfd0;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.skills {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
 }
 
 main {
