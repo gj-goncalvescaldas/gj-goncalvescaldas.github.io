@@ -41,7 +41,7 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-top: 0.5rem;
 }
 
@@ -49,7 +49,7 @@ h1 {
     background: linear-gradient(to right, #30cfd0, #330867);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .profile-photo {
@@ -67,13 +67,20 @@ h1 {
 
 .social-links a {
     margin: 0 10px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
+    background: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-links a:hover {
-    color: #30cfd0;
+    background: #30cfd0;
 }
 
 .description {
@@ -132,4 +139,3 @@ h2 {
     margin: 0.5rem 0;
     line-height: 1.6;
 }
-
