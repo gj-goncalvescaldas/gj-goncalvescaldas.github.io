@@ -103,6 +103,25 @@ h1 {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.buttons {
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #30cfd0;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: #330867;
+}
+
 main {
     padding: 2rem;
     background: white;
