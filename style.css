@@ -40,16 +40,10 @@ h1 {
     100% { transform: rotate(0deg); }
 }
 
-.subtitle {
-    font-size: 2.5rem;
-    margin-top: 0.5rem;
-}
-
 .highlight {
     background: linear-gradient(to right, #30cfd0, #330867);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
 }
 
 .profile-photo {
@@ -127,15 +121,26 @@ h2 {
 }
 
 .job, .degree {
+    display: flex;
     margin-bottom: 1.5rem;
 }
 
-.job h3, .degree h3 {
+.job-dates, .degree-dates {
+    width: 20%;
+    font-weight: bold;
+    color: #666;
+}
+
+.job-details, .degree-details {
+    width: 80%;
+}
+
+.job-details h3, .degree-details h3 {
     margin: 0;
     font-size: 1.5rem;
 }
 
-.job p, .degree p {
+.job-details p, .degree-details p {
     margin: 0.5rem 0;
     line-height: 1.6;
 }
