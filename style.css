@@ -123,17 +123,18 @@ h2 {
 .job, .degree {
     margin-bottom: 1.5rem;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 1fr;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .job-dates, .degree-dates {
     font-size: 0.9rem;
     color: #666;
-}
-
-.job-details, .degree-details {
-    display: flex;
-    flex-direction: column;
 }
 
 .job-title, .degree-title {
@@ -144,6 +145,12 @@ h2 {
 
 .job-company, .degree-company {
     font-weight: normal;
+}
+
+.job-details, .degree-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
 }
 
 .job-location, .degree-location {
