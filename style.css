@@ -170,3 +170,19 @@ h2 {
     margin-top: 1rem;
 }
 
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-selector a {
+    margin: 0 5px;
+}
+
+.language-selector img {
+    width: 30px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
