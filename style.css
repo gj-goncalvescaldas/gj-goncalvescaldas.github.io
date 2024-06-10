@@ -8,7 +8,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -20,6 +20,12 @@ header {
 
 h1 {
     margin: 0;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 .profile-photo {
@@ -30,8 +36,22 @@ h1 {
     margin-top: 1rem;
 }
 
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
 main {
-    padding: 1rem;
+    padding: 2rem;
     background: white;
     margin: 1rem auto;
     width: 80%;
@@ -53,8 +73,10 @@ h2 {
 
 .job h3, .degree h3 {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 .job p, .degree p {
     margin: 0.5rem 0;
+    line-height: 1.6;
 }
