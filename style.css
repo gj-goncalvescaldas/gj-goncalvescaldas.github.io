@@ -123,11 +123,11 @@ h2 {
 .job, .degree {
     margin-bottom: 1.5rem;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
 }
 
 .job-dates, .degree-dates {
-    font-weight: bold;
+    font-size: 0.9rem;
     color: #666;
 }
 
@@ -162,5 +162,6 @@ h2 {
 .job-description li, .degree-description li {
     margin-bottom: 0.5rem;
 }
+
 
 
