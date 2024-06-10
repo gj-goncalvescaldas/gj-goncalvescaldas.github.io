@@ -26,6 +26,9 @@ h1 {
 .subtitle {
     font-size: 1.2rem;
     margin-top: 0.5rem;
+    background: -webkit-linear-gradient(left, #30cfd0, #330867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .profile-photo {
@@ -44,10 +47,11 @@ h1 {
     margin: 0 10px;
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .social-links a:hover {
-    text-decoration: underline;
+    color: #30cfd0;
 }
 
 main {
