@@ -24,6 +24,11 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
 .wave {
     display: inline-block;
     animation: wave-animation 2.5s infinite;
@@ -119,82 +124,88 @@ h1 {
 }
 
 .button:hover {
-    background-color: #330867;
-}
+    background-colorTo structure your webpage similarly to the example you provided, we can organize the content sections with a clean layout, distinct sections for "Experience" and "Education," and use modern CSS styling. Below is an example of how to structure and style your HTML and CSS:
 
-main {
-    padding: 2rem;
-    background: white;
-    margin: 1rem auto;
-    width: 80%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-}
-
-.job, .degree {
-    margin-bottom: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.job-dates, .degree-dates {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.job-title, .degree-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.job-company, .degree-company {
-    font-weight: normal;
-}
-
-.job-details, .degree-details {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-}
-
-.job-location, .degree-location {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 0.5rem;
-}
-
-.job-description, .degree-description {
-    margin: 0;
-    padding: 0;
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
-.job-description li, .degree-description li {
-    margin-bottom: 0.5rem;
-}
-
-.box {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-top: 1rem;
-}
+### HTML:
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Caldas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="foto.jpeg" alt="Mi Foto" class="profile-photo">
+            <h1>Hi there, I'm Gustavo Caldas,</h1>
+            <h2 class="highlight">a Data Engineer</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gustavocaldas22/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:gj.goncalvescaldas@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/gj-goncalvescaldas" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="description">
+                Soy un portugués viviendo en Madrid, con una pasión por el aprendizaje continuo y el descubrimiento de nuevas habilidades. Me fascina el Machine Learning y me encanta la construcción y creación de bases de datos robustas. Siempre estoy en busca de nuevos retos y oportunidades para crecer y aportar en el ámbito tecnológico.
+            </p>
+            <div class="skills">
+                <span class="skill">IA</span>
+                <span class="skill">Python</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Azure Environment</span>
+                <span class="skill">ETL</span>
+                <span class="skill">Machine Learning</span>
+                <span class="skill">PowerBi</span>
+                <span class="skill">ChatGPT</span>
+            </div>
+            <div class="buttons">
+                <a href="#experience" class="button">Experiencia Laboral</a>
+                <a href="#education" class="button">Estudios</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="experience" class="experience">
+            <h2>Experiencia</h2>
+            <div class="box">
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-dates">Agosto 2023 - Diciembre 2023</div>
+                        <div class="job-title">Data Engineer at <span class="job-company">Nationale-Nederlanden</span></div>
+                    </div>
+                    <div class="job-details">
+                        <p class="job-location">Madrid, Comunidad de Madrid, España</p>
+                        <ul class="job-description">
+                            <li>Databricks, SQL Server, SQL, Python, PowerBI, Data Warehouse, Microsoft Azure, Fabric, Copilot</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-dates">Septiembre 2022 - Septiembre 2023</div>
+                        <div class="job-title">Investigador de Minería de Datos at <span class="job-company">IOTECH</span></div>
+                    </div>
+                    <div class="job-details">
+                        <p class="job-location">Oporto, Portugal</p>
+                        <ul class="job-description">
+                            <li>Tuve el privilegio de colaborar con IOTECH en el proyecto ioCity...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="education">
+            <h2>Educación</h2>
+            <div class="box">
+                <div class="degree">
+                    <div class="degree-dates">Junio 2023 - Diciembre 2023</div>
+                    <div class="degree-details">
+                        <h3 class="degree-title">Bootcamp en Marketing Data Analytics at <span class="degree-company">Universidad Internacional de La Rioja (UNIR)</span></h3>
+                        <ul class="degree-description">
+                            <li>Experiencia enriquecedora que me permitió profundizar en las
 
 
 
