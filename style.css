@@ -122,25 +122,25 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-.job, .degree {
+.job, .degree, .article {
     margin-bottom: 1.5rem;
     display: grid;
     grid-template-columns: 15% 75% 10%;
 }
 
-.job-dates, .degree-dates {
+.job-dates, .degree-dates, .article-dates {
     font-size: 0.9rem;
     color: #666;
 }
 
-.job-details, .degree-details {
+.job-details, .degree-details, .article-details {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 1rem;
 }
 
-.job-title, .degree-title {
+.job-title, .degree-title, .article-title {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
@@ -213,6 +213,7 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 3px;
 }
+
 .pdf-container {
     width: 80%;
     margin: 2rem auto;
