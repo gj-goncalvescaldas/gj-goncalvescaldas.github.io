@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f7f7f7;
     color: #333;
 }
 
@@ -11,6 +11,7 @@ header {
     color: #333;
     padding: 2rem 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -109,6 +110,7 @@ main {
     margin: 1rem auto;
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 section {
@@ -132,8 +134,10 @@ h2 {
 }
 
 .job-details, .degree-details {
-    display: flex;
-    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
 }
 
 .job-title, .degree-title {
@@ -164,6 +168,7 @@ h2 {
 }
 
 .box {
+    background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 1rem;
