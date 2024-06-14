@@ -315,7 +315,7 @@ header h1 {
 .switch {
     position: relative;
     display: inline-block;
-    width: 80px; /* Aumentado */
+    width: 60px;
     height: 34px;
 }
 
@@ -341,13 +341,46 @@ header h1 {
     padding: 0 5px;
 }
 
-.icon-sun, .icon-moon {
-    width: 20px;
-    height: 20px;
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
 }
 
 input:checked + .slider {
     background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Muestra siempre ambos íconos */
+.slider .icon-sun, .slider .icon-moon {
+    width: 20px;
+    height: 20px;
+}
+
+.slider .icon-sun {
+    display: block;
+}
+
+input:checked + .slider .icon-sun {
+    display: block;
+}
+
+input:checked + .slider .icon-moon {
+    display: block;
+}
+
+input:not(:checked) + .slider .icon-moon {
+    display: block;
 }
 
 /* Modo oscuro */
@@ -393,3 +426,4 @@ body.dark-mode .social-links a:hover {
 body.dark-mode .theme-toggle-container span {
     color: #e0e0e0;
 }
+
