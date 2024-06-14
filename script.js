@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const welcomeButton = document.getElementById("welcome-button");
     const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
 
-    welcomeButton.addEventListener("click", function() {
-        alert("¡Bienvenidos a mi perfil profesional!");
-    });
+    // Comprobar si el tema oscuro está habilitado en localStorage
+    if (localStorage.getItem("dark-mode") === "true") {
+        body.classList.add("dark-mode");
+        themeToggle.checked = true;
+    }
 
     themeToggle.addEventListener("change", function() {
-        if (themeToggle.checked) {
-            document.body.classList.add("dark-mode");
-        } else {
-            document.body.classList.remove("dark-mode");
-        }
+        body.classList.toggle("dark-mode");
+        // Guardar la preferencia en localStorage
+        localStorage.setItem("dark-mode", body.classList.contains("dark-mode"));
     });
 });
