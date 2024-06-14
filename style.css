@@ -335,10 +335,6 @@ header h1 {
     background-color: #ccc;
     transition: 0.4s;
     border-radius: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
 }
 
 .slider:before {
@@ -361,18 +357,26 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-.icon-sun, .icon-moon {
-    display: none;
+.slider .icon-sun, .slider .icon-moon {
+    position: absolute;
     width: 20px;
     height: 20px;
 }
 
-.icon-sun {
+.slider .icon-sun {
+    left: 8px;
+    top: 7px;
+    display: block;
+}
+
+.slider .icon-moon {
+    right: 8px;
+    top: 7px;
     display: block;
 }
 
 input:checked + .slider .icon-sun {
-    display: none;
+    display: block;
 }
 
 input:checked + .slider .icon-moon {
