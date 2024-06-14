@@ -439,3 +439,16 @@ body.dark-mode .bold-text {
     font-weight: bold;
     color: #e0e0e0;
 }
+
+/* Nuevo estilo para las secciones */
+body.dark-mode section {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode section h2 {
+    color: #e0e0e0;
+}
