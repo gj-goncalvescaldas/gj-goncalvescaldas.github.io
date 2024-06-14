@@ -434,13 +434,6 @@ body.dark-mode .degree-description li {
     color: #e0e0e0;
 }
 
-/* Ajustes adicionales para negrita */
-body.dark-mode .bold-text {
-    font-weight: bold;
-    color: #e0e0e0;
-}
-
-/* Nuevo estilo para las secciones */
 body.dark-mode section {
     background-color: #1e1e1e;
     color: #e0e0e0;
