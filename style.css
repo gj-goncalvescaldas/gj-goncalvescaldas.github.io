@@ -361,28 +361,32 @@ body.dark-mode header {
     color: #e0e0e0;
 }
 
-body.dark-mode .box {
+body.dark-mode .box, 
+body.dark-mode .experience .box, 
+body-dark-mode .education .box, 
+body-dark-mode .articles .box {
     background-color: #1e1e1e;
     border-color: #333;
+    color: #e0e0e0;
 }
 
-body.dark-mode .job-details, 
-body.dark-mode .degree-details, 
-body.dark-mode .article-details {
+body-dark-mode .job-details, 
+body-dark-mode .degree-details, 
+body-dark-mode .article-details {
     background-color: #1e1e1e;
     color: #e0e0e0;
 }
 
-body.dark-mode .job-title, 
-body.dark-mode .degree-title, 
+body-dark-mode .job-title, 
+body-dark-mode .degree-title, 
 body-dark-mode .article-title,
-body.dark-mode .job-company, 
-body.dark-mode .degree-company {
+body-dark-mode .job-company, 
+body-dark-mode .degree-company {
     color: #e0e0e0;
 }
 
-body.dark-mode .job-dates, 
-body.dark-mode .degree-dates, 
+body-dark-mode .job-dates, 
+body-dark-mode .degree-dates, 
 body-dark-mode .article-dates {
     color: #e0e0e0;
 }
@@ -445,4 +449,10 @@ body-dark-mode section h2 {
 body-dark-mode main {
     background-color: #1e1e1e; /* Cambiar el fondo del contenedor principal */
     box-shadow: none; /* Eliminar la sombra si no es necesaria */
+}
+
+body-dark-mode .experience, 
+body-dark-mode .education, 
+body-dark-mode .articles {
+    background-color: #1e1e1e; /* Asegurarse de que los contenedores tengan el fondo oscuro */
 }
