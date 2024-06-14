@@ -394,3 +394,17 @@ body.dark-mode .theme-toggle-container span {
     color: #e0e0e0;
 }
 
+body.dark-mode main {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: none;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode h2 {
+    border-bottom-color: #e0e0e0;
+    color: #e0e0e0;
+}
