@@ -298,7 +298,6 @@ header h1 {
         margin: 1rem auto;
     }
 }
-
 /* Estilos para el conmutador de tema oscuro */
 .theme-toggle-container {
     display: flex;
@@ -335,6 +334,10 @@ header h1 {
     background-color: #ccc;
     transition: 0.4s;
     border-radius: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
 }
 
 .slider:before {
@@ -357,19 +360,20 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-.slider .icon-sun, .slider .icon-moon {
-    position: absolute;
+.icon-sun, .icon-moon {
     width: 20px;
     height: 20px;
 }
 
 .slider .icon-sun {
+    position: absolute;
     left: 8px;
     top: 7px;
     display: block;
 }
 
 .slider .icon-moon {
+    position: absolute;
     right: 8px;
     top: 7px;
     display: block;
