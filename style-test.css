@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    color: #333;
+    background-color: #e9ecef;
+    color: #343a40;
 }
 
 header {
-    background-color: #fff;
-    color: #333;
+    background-color: #007bff;
+    color: #fff;
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,7 @@ h1 {
 }
 
 .highlight {
-    background: linear-gradient(to right, #30cfd0, #330867);
+    background: linear-gradient(to right, #30cfd0, #ff5733);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -65,23 +65,24 @@ h1 {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
-    background: #333;
+    background: #343a40;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: background 0.3s ease;
 }
 
 .social-links a:hover {
-    background: #30cfd0;
+    background: #ff5733;
 }
 
 .description {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #666;
+    color: #495057;
     width: 60%;
     margin: 1rem auto;
 }
@@ -94,19 +95,19 @@ h1 {
 }
 
 .skill {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
     border-radius: 15px;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     font-size: 0.9rem;
-    color: #333;
+    color: #495057;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 main {
     padding: 2rem;
-    background: white;
+    background: #ffffff;
     margin: 1rem auto;
     width: 80%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -118,7 +119,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #343a40;
     padding-bottom: 0.5rem;
 }
 
@@ -130,11 +131,11 @@ h2 {
 
 .job-dates, .degree-dates, .article-dates {
     font-size: 0.9rem;
-    color: #666;
+    color: #868e96;
 }
 
 .job-details, .degree-details, .article-details {
-    background: #fff;
+    background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 1rem;
@@ -143,7 +144,7 @@ h2 {
 .job-title, .degree-title, .article-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: #343a40;
 }
 
 .job-company, .degree-company {
@@ -152,7 +153,7 @@ h2 {
 
 .job-location, .degree-location {
     font-size: 0.9rem;
-    color: #666;
+    color: #868e96;
     margin-top: 0.5rem;
 }
 
@@ -168,8 +169,8 @@ h2 {
 }
 
 .box {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
     border-radius: 10px;
     padding: 1rem;
     margin-top: 1rem;
@@ -185,16 +186,17 @@ h2 {
     display: inline-block;
     padding: 0.5rem 1rem;
     margin: 1rem;
-    background-color: #0073e6;
+    background-color: #007bff;
     color: white;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
 }
 
 .button:hover {
-    background-color: #005bb5;
+    background-color: #0056b3;
 }
 
 .language-selector {
@@ -210,21 +212,21 @@ h2 {
 .language-selector img {
     width: 30px;
     height: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ced4da;
     border-radius: 3px;
 }
 
 .pdf-container {
     width: 80%;
     margin: 2rem auto;
-    border: 1px solid #ddd;
+    border: 1px solid #ced4da;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 header {
-    background-color: #fff;
+    background-color: #007bff;
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
