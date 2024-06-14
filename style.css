@@ -425,16 +425,16 @@ body.dark-mode .articles h2 {
 
 body.dark-mode .job-dates, 
 body.dark-mode .degree-dates, 
-body.dark-mode .article-dates {
+body-dark-mode .article-dates {
     color: #e0e0e0;
 }
 
-body.dark-mode .job-description li, 
-body.dark-mode .degree-description li {
+body-dark-mode .job-description li, 
+body-dark-mode .degree-description li {
     color: #e0e0e0;
 }
 
-body.dark-mode section {
+body-dark-mode section {
     background-color: #1e1e1e;
     color: #e0e0e0;
     padding: 1rem;
@@ -442,11 +442,11 @@ body.dark-mode section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-body.dark-mode section h2 {
+body-dark-mode section h2 {
     color: #e0e0e0;
 }
 
-body.dark-mode main {
+body-dark-mode main {
     background-color: #1e1e1e; /* Cambiar el fondo del contenedor principal */
     box-shadow: none; /* Eliminar la sombra si no es necesaria */
 }
