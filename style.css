@@ -352,26 +352,26 @@ input:checked + .slider {
 
 /* Modo oscuro */
 body.dark-mode {
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #121212; /* Fondo más oscuro para el cuerpo */
+    color: #e0e0e0; /* Texto más claro */
 }
 
 body.dark-mode header {
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro para el header */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body.dark-mode .box {
-    background-color: #000000; /* Fondo negro */
-    border-color: #ffffff; /* Borde blanco */
-    color: #ffffff; /* Texto blanco */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro para las cajas */
+    border-color: #333; /* Borde más oscuro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body.dark-mode .job-details, 
 body.dark-mode .degree-details, 
 body-dark-mode .article-details {
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body.dark-mode .job-title, 
@@ -379,87 +379,87 @@ body-dark-mode .degree-title,
 body-dark-mode .article-title,
 body-dark-mode .job-company, 
 body-dark-mode .degree-company {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .job-dates, 
 body-dark-mode .degree-dates, 
 body-dark-mode .article-dates {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .button {
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #333; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .button:hover {
-    background-color: #333333; /* Fondo gris oscuro */
+    background-color: #555; /* Fondo más claro */
 }
 
 body-dark-mode .social-links a {
-    background-color: #000000; /* Fondo negro */
+    background-color: #333; /* Fondo oscuro */
 }
 
 body-dark-mode .social-links a:hover {
-    background-color: #333333; /* Fondo gris oscuro */
+    background-color: #555; /* Fondo más claro */
 }
 
 body-dark-mode .theme-toggle-container span {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .experience, 
 body-dark-mode .education, 
 body-dark-mode .articles {
-    background-color: #000000; /* Fondo negro */
-    border-color: #ffffff; /* Borde blanco */
-    color: #ffffff; /* Texto blanco */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
+    border-color: #333; /* Borde más oscuro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .experience h2, 
 body-dark-mode .education h2, 
 body-dark-mode .articles h2 {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .job-dates, 
 body-dark-mode .degree-dates, 
 body-dark-mode .article-dates {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode .job-description li, 
 body-dark-mode .degree-description li {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode section {
-    background-color: #000000; /* Fondo negro */
-    color: #ffffff; /* Texto blanco */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode section h2 {
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 body-dark-mode main {
-    background-color: #000000; /* Fondo negro */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
     box-shadow: none; /* Eliminar la sombra si no es necesaria */
-    color: #ffffff; /* Texto blanco */
+    color: #e0e0e0; /* Texto claro */
 }
 
 /* Asegurar que los contenedores principales tengan el fondo oscuro */
 body.dark-mode .experience, 
 body.dark-mode .education, 
 body.dark-mode .articles {
-    background-color: #000000; /* Fondo negro */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
 }
 
 /* Asegurar que los sub-contenedores también tengan el fondo oscuro */
 body.dark-mode .experience .box, 
 body.dark-mode .education .box, 
 body.dark-mode .articles .box {
-    background-color: #000000; /* Fondo negro */
-    border-color: #ffffff; /* Borde blanco */
+    background-color: #1e1e1e; /* Fondo ligeramente más claro */
+    border-color: #333; /* Borde más oscuro */
 }
