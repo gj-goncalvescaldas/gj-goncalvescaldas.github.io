@@ -338,19 +338,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px; /* Aumentado */
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
+    padding: 0 5px;
 }
 
 .icon-sun, .icon-moon {
@@ -360,10 +348,6 @@ header h1 {
 
 input:checked + .slider {
     background-color: #2196F3;
-}
-
-input:checked + .slider:before {
-    transform: translateX(46px); /* Aumentado */
 }
 
 /* Modo oscuro */
@@ -409,3 +393,4 @@ body.dark-mode .social-links a:hover {
 body.dark-mode .theme-toggle-container span {
     color: #e0e0e0;
 }
+
