@@ -379,7 +379,7 @@ body.dark-mode .article-title,
 body.dark-mode .job-company, 
 body.dark-mode .degree-company {
     color: #e0e0e0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 body.dark-mode .job-dates, 
@@ -406,5 +406,36 @@ body.dark-mode .social-links a:hover {
 }
 
 body.dark-mode .theme-toggle-container span {
+    color: #e0e0e0;
+}
+
+body.dark-mode .experience, 
+body.dark-mode .education, 
+body.dark-mode .articles {
+    background-color: #1e1e1e;
+    border-color: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .experience h2, 
+body.dark-mode .education h2, 
+body.dark-mode .articles h2 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .job-dates, 
+body.dark-mode .degree-dates, 
+body.dark-mode .article-dates {
+    color: #e0e0e0;
+}
+
+body.dark-mode .job-description li, 
+body.dark-mode .degree-description li {
+    color: #e0e0e0;
+}
+
+/* Ajustes adicionales para negrita */
+body.dark-mode .bold-text {
+    font-weight: bold;
     color: #e0e0e0;
 }
