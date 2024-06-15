@@ -315,6 +315,7 @@ header h1 {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 0; /* Ensure it aligns to the left */
 }
 
 /* Styling for the language selector */
