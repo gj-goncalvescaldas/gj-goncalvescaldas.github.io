@@ -18,7 +18,15 @@
 <body>
     <header>
         <div class="top-bar">
-            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+            <div class="dark-mode-toggle">
+                <span id="light-label">LIGHT</span>
+                <input type="checkbox" id="toggle-dark-mode">
+                <label for="toggle-dark-mode" class="toggle-label">
+                    <img src="images/Sol.png" alt="Sun" class="sun-icon">
+                    <img src="images/lua.png" alt="Moon" class="moon-icon">
+                </label>
+                <span id="dark-label">DARK</span>
+            </div>
             <div class="language-selector">
                 <a href="index.html"><img src="images/flags/spain.png" alt="Español"></a>
                 <a href="index-en.html"><img src="images/flags/uk.png" alt="English"></a>

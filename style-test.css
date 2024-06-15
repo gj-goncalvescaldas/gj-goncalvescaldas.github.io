@@ -298,6 +298,8 @@ header h1 {
         width: 100%;
         margin: 1rem auto;
     }
+
+
     /* Styles for the top bar */
 /* Styles for the top bar */
     .top-bar {
@@ -309,25 +311,66 @@ header h1 {
         width: 100%;
     }
 
-/* Positioning the dark mode toggle button */
-    #toggle-dark-mode {
-        background-color: #007bff; /* Adjust as needed */
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-left: 0; /* Ensure it aligns to the left */
+    /* Positioning the dark mode toggle */
+    .dark-mode-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
-/* Styling for the language selector */
+    #toggle-dark-mode {
+        display: none; /* Hide the checkbox */
+    }
+
+    .toggle-label {
+        position: relative;
+        width: 50px;
+        height: 25px;
+        background-color: #e0e0e0;
+        border-radius: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    .sun-icon,
+    .moon-icon {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    #toggle-dark-mode:checked + .toggle-label .sun-icon {
+        transform: translateX(25px);
+    }
+
+    #toggle-dark-mode:checked + .toggle-label .moon-icon {
+        transform: translateX(-25px);
+    }
+
+    /* Styling for the language selector */
     .language-selector {
         display: flex;
         gap: 10px; /* Adjust the gap between flags as needed */
         margin-left: auto; /* Pushes the language selector to the far right */
     }
-            
+
+    /* Responsive design (optional) */
+    @media (max-width: 768px) {
+        .top-bar {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .language-selector {
+            margin-top: 10px;
+            justify-content: center;
+        }
+    }
+    
 
 
-}
+    }
 
