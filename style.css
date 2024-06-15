@@ -1,5 +1,6 @@
-/* Estilos existentes */
+/* Eliminar todo lo relacionado con el modo oscuro y el conmutador de tema */
 
+/* Estilos existentes */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -237,7 +238,7 @@ header h1 {
     font-size: 2rem;
 }
 
-/* Media Queries para dispositivos móveis */
+/* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -297,169 +298,4 @@ header h1 {
         width: 100%;
         margin: 1rem auto;
     }
-}
-
-/* Estilos para el conmutador de tema oscuro */
-.theme-toggle-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.theme-toggle-container span {
-    margin: 0 10px;
-    font-size: 1rem;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 80px; /* Aumentado */
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5px;
-}
-
-.icon-sun, .icon-moon {
-    width: 20px;
-    height: 20px;
-}
-
-input:checked + .slider {
-    background-color: #2196F3;
-}
-
-/* Modo oscuro */
-body.dark-mode {
-    background-color: #121212; /* Fondo más oscuro para el cuerpo */
-    color: #e0e0e0; /* Texto más claro */
-}
-
-body.dark-mode header {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro para el header */
-    color: #e0e0e0; /* Texto claro */
-}
-
-body.dark-mode .box {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro para las cajas */
-    border-color: #333; /* Borde más oscuro */
-    color: #e0e0e0; /* Texto claro */
-}
-
-body.dark-mode .job-details, 
-body.dark-mode .degree-details, 
-body-dark-mode .article-details {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro */
-    color: #e0e0e0; /* Texto claro */
-}
-
-body.dark-mode .job-title, 
-body-dark-mode .degree-title, 
-body-dark-mode .article-title,
-body-dark-mode .job-company, 
-body-dark-mode .degree-company {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .job-dates, 
-body-dark-mode .degree-dates, 
-body-dark-mode .article-dates {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .button {
-    background-color: #333; /* Fondo oscuro */
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .button:hover {
-    background-color: #555; /* Fondo más claro */
-}
-
-body-dark-mode .social-links a {
-    background-color: #333; /* Fondo oscuro */
-}
-
-body-dark-mode .social-links a:hover {
-    background-color: #555; /* Fondo más claro */
-}
-
-body-dark-mode .theme-toggle-container span {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .experience, 
-body-dark-mode .education, 
-body-dark-mode .articles {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro */
-    border-color: #333; /* Borde más oscuro */
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .experience h2, 
-body-dark-mode .education h2, 
-body-dark-mode .articles h2 {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .job-dates, 
-body-dark-mode .degree-dates, 
-body-dark-mode .article-dates {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode .job-description li, 
-body-dark-mode .degree-description li {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode section {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro */
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode section h2 {
-    color: #e0e0e0; /* Texto claro */
-}
-
-body-dark-mode main {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro */
-    box-shadow: none; /* Eliminar la sombra si no es necesaria */
-    color: #e0e0e0; /* Texto claro */
-}
-
-/* Asegurar que los contenedores principales tengan el fondo oscuro */
-body.dark-mode .experience, 
-body.dark-mode .education, 
-body.dark-mode .articles {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro */
-}
-
-/* Asegurar que los sub-contenedores también tengan el fondo oscuro */
-body.dark-mode .experience .box, 
-body.dark-mode .education .box, 
-body.dark-mode .articles .box {
-    background-color: #1e1e1e; /* Fondo ligeramente más claro */
-    border-color: #333; /* Borde más oscuro */
 }
