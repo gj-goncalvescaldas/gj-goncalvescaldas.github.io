@@ -300,15 +300,15 @@ header h1 {
     }
 
 
- /* Styles for the top bar */
-.top-bar {
-    display: flex;
-    justify-content: space-between; /* Distributes space between items */
-    align-items: center; /* Aligns items vertically */
-    padding: 10px 20px;
-    background-color: #f8f9fa; /* Adjust as needed */
-    width: 100%;
-}
+    /* Styles for the top bar */
+    .top-bar {
+        display: flex;
+        justify-content: space-between; /* Distributes space between items */
+        align-items: center; /* Aligns items vertically */
+        padding: 10px 20px;
+        background-color: #f8f9fa; /* Adjust as needed */
+        width: 100%;
+    }
 
     /* Positioning the dark mode toggle */
     .dark-mode-toggle {
@@ -323,8 +323,8 @@ header h1 {
 
     .toggle-label {
         position: relative;
-        width: 50px;
-        height: 25px;
+        width: 80px; /* Adjust as needed */
+        height: 30px; /* Adjust as needed */
         background-color: #e0e0e0;
         border-radius: 15px;
         cursor: pointer;
@@ -338,15 +338,23 @@ header h1 {
     .moon-icon {
         width: 20px; /* Adjust the size as needed */
         height: 20px; /* Adjust the size as needed */
-        transition: transform 0.3s ease;
+        transition: opacity 0.3s ease;
     }
 
     #toggle-dark-mode:checked + .toggle-label .sun-icon {
-        transform: translateX(25px);
+        opacity: 0.3; /* Make the sun icon less visible in dark mode */
     }
 
     #toggle-dark-mode:checked + .toggle-label .moon-icon {
-        transform: translateX(-25px);
+        opacity: 1; /* Make the moon icon fully visible in dark mode */
+    }
+
+    #toggle-dark-mode:not(:checked) + .toggle-label .moon-icon {
+        opacity: 0.3; /* Make the moon icon less visible in light mode */
+    }
+
+    #toggle-dark-mode:not(:checked) + .toggle-label .sun-icon {
+        opacity: 1; /* Make the sun icon fully visible in light mode */
     }
 
     /* Styling for the language selector */
@@ -360,86 +368,13 @@ header h1 {
     @media (max-width: 768px) {
         .top-bar {
             flex-direction: column;
-            align-items: stretch;
+            align-items: center;
         }
 
         .language-selector {
             margin-top: 10px;
             justify-content: center;
         }
-    /* Styles for the top bar */
-.top-bar {
-    display: flex;
-    justify-content: space-between; /* Distributes space between items */
-    align-items: center; /* Aligns items vertically */
-    padding: 10px 20px;
-    background-color: #f8f9fa; /* Adjust as needed */
-    width: 100%;
-}
-
-/* Positioning the dark mode toggle */
-.dark-mode-toggle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#toggle-dark-mode {
-    display: none; /* Hide the checkbox */
-}
-
-.toggle-label {
-    position: relative;
-    width: 100px; /* Adjust as needed */
-    height: 30px; /* Adjust as needed */
-    background-color: #e0e0e0;
-    border-radius: 15px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-}
-
-.sun-icon,
-.moon-icon {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    transition: opacity 0.3s ease;
-}
-
-#toggle-dark-mode:checked + .toggle-label .sun-icon {
-    opacity: 0.5; /* Make the sun icon less visible in dark mode */
-}
-
-#toggle-dark-mode:checked + .toggle-label .moon-icon {
-    opacity: 1; /* Make the moon icon fully visible in dark mode */
-}
-
-#toggle-dark-mode:not(:checked) + .toggle-label .moon-icon {
-    opacity: 0.5; /* Make the moon icon less visible in light mode */
-}
-
-#toggle-dark-mode:not(:checked) + .toggle-label .sun-icon {
-    opacity: 1; /* Make the sun icon fully visible in light mode */
-}
-
-/* Styling for the language selector */
-.language-selector {
-    display: flex;
-    gap: 10px; /* Adjust the gap between flags as needed */
-    margin-left: auto; /* Pushes the language selector to the far right */
-}
-
-/* Responsive design (optional) */
-@media (max-width: 768px) {
-    .top-bar {
-        flex-direction: column;
-        align-items: stretch;
     }
 
-    .language-selector {
-        margin-top: 10px;
-        justify-content: center;
-    }
-}}}
+}
