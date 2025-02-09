@@ -13,6 +13,43 @@
     <meta property="og:image" content="https://gj-goncalvescaldas.github.io/images/thumbnail.jpg">
     <meta property="og:url" content="https://gj-goncalvescaldas.github.io/bluetab.html">
     <meta property="og:type" content="website">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        .pdf-container {
+            width: 90%;
+            max-width: 1400px;
+            height: 80vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,10 +64,7 @@
         <div class="pdf-container">
             <iframe 
                 title="Blue Tab Report" 
-                width="1140" 
-                height="541.25" 
                 src="https://app.powerbi.com/reportEmbed?reportId=8a28b169-11cf-4c27-a143-748295158452&autoAuth=true&ctid=d05d4c80-da1e-4cd7-83a6-0d2094b20418" 
-                frameborder="0" 
                 allowFullScreen="true">
             </iframe>
         </div>
