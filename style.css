@@ -227,6 +227,27 @@ h2 {
     overflow: visible; /* Permite expansión si es necesario */
 }
 
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container .button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.video-container .button:hover {
+    background-color: #0056b3;
+}
+
+
 header {
     background-color: #fff;
     padding: 1rem 0;
