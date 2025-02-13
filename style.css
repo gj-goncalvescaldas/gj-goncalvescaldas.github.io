@@ -223,7 +223,8 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    min-height: 1200px; /* Asegura que crezca */
+    overflow: visible; /* Permite expansión si es necesario */
 }
 
 header {
